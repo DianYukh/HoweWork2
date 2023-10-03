@@ -1,4 +1,4 @@
-package org.example.Homework;
+package org.example.Homework.homework2;
 
 public class Task07 {
     /* Розробіть програму, яка дозволить обчислити суму вкладу банку
@@ -15,7 +15,7 @@ public class Task07 {
 
 
 
-        double amount = Math.round((deposit * Math.pow((1 + percent/100), term) * 100.0 )/ 100.0);
+        double amount = Math.ceil((deposit * Math.pow((1 + percent/100), term) * 100.0 )/ 100.0);
 
         System.out.println("Cума вкладу банку через два роки " + amount + " грн");
     }

@@ -1,4 +1,4 @@
-package org.example.Homework;
+package org.example.Homework.homework2;
 
 import java.net.SocketOption;
 
@@ -14,8 +14,8 @@ public class Task10 {
         final double weight = 50.3; // вага
 
         int idealweight = height - 110; // ідеальна вага
-        double gainweight = Math.round((idealweight - weight)*100.0)/100.0; // різница між ідеальною вагою та поточною (для набору маси)
-        double dumpweight = Math.round((weight - idealweight) *100.0)/100.0; // різниця  між ідеальною вагою та поточною (для скидання маси)
+        double gainweight = Math.ceil((idealweight - weight)*100.0)/100.0; // різница між ідеальною вагою та поточною (для набору маси)
+        double dumpweight = Math.ceil((weight - idealweight) *100.0)/100.0; // різниця  між ідеальною вагою та поточною (для скидання маси)
 
 
         if (weight < idealweight){

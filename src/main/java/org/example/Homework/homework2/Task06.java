@@ -1,4 +1,4 @@
-package org.example.Homework;
+package org.example.Homework.homework2;
 
 public class Task06 {
 
