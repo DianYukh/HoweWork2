@@ -28,8 +28,11 @@ public class Task11 {
             System.out.println("Другий корінь = " + x2);
         }else if
         (duskruminant == 0) {
+            System.out.println("Єдиний корінь =" + x );
+        } else {
             System.out.println("Дійсних коренів не має");
         }
+
     }
 
 }
