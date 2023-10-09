@@ -15,19 +15,18 @@ public class Task02 {
 
 
         for (int k = 0; k < a; k++) {
-            System.out.print("* ");
-        }
-        System.out.println();
-        for (int j = 1; j < a - 1; j++) {
-            System.out.print("* ");
-            for (int l = 1; l < a - 1; l++) {
-                System.out.print("  ");
+            for (int m = 0; m < a; m++) {
+                if (k == 0 || k == a - 1) {
+                    System.out.print("* ");
+                } else if (m == a - 1 || m == 0) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
             }
-            System.out.println("* ");
+            System.out.println();
         }
-        for (int m = 0; m < a; m++) {
-            System.out.print("* ");
-        }
-        System.out.println();
+
     }
 }
+
