@@ -22,10 +22,12 @@ public class Task05 {
             for (int j = i + 1; j < arr.length; j++) {
                 if (i != j && arr[i] == arr[j]) {
                     count++;
-                } else { continue;}
+                } else {
+                    continue;
+                }
             }
             if (count > 0) {
-                System.out.println( "Число " + arr[i] + " повторюється " + (count+1) + " раза");
+                System.out.println("Число " + arr[i] + " повторюється " + (count + 1) + " раза");
 
             }
         }
