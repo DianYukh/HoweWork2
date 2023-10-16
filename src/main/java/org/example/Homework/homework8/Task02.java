@@ -12,10 +12,12 @@ public class Task02 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введіть число n ");
-        int n = sc.nextInt();
 
+        int n = sc.nextInt();
         int firstNumber = 1;
+
         String numString = "";
+
         while (numString.length() < 1000) {
             numString += firstNumber;
             firstNumber++;
