@@ -33,5 +33,6 @@ public class Task02 {
         }
         char digit = numString.charAt(n - 1);
         System.out.println("Цифра на " + n + " позиції - " + digit);
+        System.out.println(numString.length());
     }
 }
