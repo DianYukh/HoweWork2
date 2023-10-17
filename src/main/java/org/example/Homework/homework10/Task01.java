@@ -20,8 +20,7 @@ public class Task01 {
         System.out.println("Введіть рядок 2: ");
         String str2 = sc.nextLine();
 
-        str1 = str1.replaceAll("[^a-zA-Z]", "").toLowerCase();
-        str2 = str2.replaceAll("[^a-zA-Z]", "").toLowerCase();
+
 
 
     }
