@@ -1,5 +1,6 @@
 package org.example.Homework.homework10;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Task01 {
@@ -20,6 +21,22 @@ public class Task01 {
         System.out.println("Введіть рядок 2: ");
         String str2 = sc.nextLine();
 
+        str1 = str1.replaceAll("[^a-zA-Zа-яА-Я]", "").toLowerCase();
+        str2 = str2.replaceAll("[^a-zA-Zа-яА-Я]", "").toLowerCase();
+
+        char[] str1Array = str1.toCharArray();
+        char[] str2Array = str2.toCharArray();
+
+
+        Arrays.sort(str1Array);
+        Arrays.sort(str2Array);
+
+
+        if(Arrays.equals(str1Array, str2Array)){
+            System.out.println("Yes");
+        }else{
+            System.out.println("No");
+        }
 
 
 
