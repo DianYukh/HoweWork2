@@ -27,10 +27,8 @@ public class Task01 {
         char[] str1Array = str1.toCharArray();
         char[] str2Array = str2.toCharArray();
 
-
         Arrays.sort(str1Array);
         Arrays.sort(str2Array);
-
 
         if(Arrays.equals(str1Array, str2Array)){
             System.out.println("Yes");
