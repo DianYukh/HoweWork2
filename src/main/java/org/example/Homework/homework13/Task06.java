@@ -44,7 +44,7 @@ public class Task06 {
 
         for (int i = 0; i < Array.length; i++) {
             for (int j = 0; j < Array.length; j++) {
-                int Arrayrepeat = Array[i][j];
+                int Arrayrepeat = Array[i][j]; // змінна, яку використовую для збереження числа, яке буде повторюватися
                 boolean repeat = false;
                 for (int k = 0; k < i; k++) {
                     for (int l = 0; l < Array[k].length; l++) {
