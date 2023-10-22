@@ -54,15 +54,14 @@ public class Task06 {
                         }
                     }
                 }
-                            if (repeat) {
-                                System.out.println(" повторюється у (" + i + "," + j + ") рядку і стовпці відповідно");
-                            }
-
-                    }
+                if (repeat) {
+                    System.out.println(" повторюється у (" + i + "," + j + ") рядку і стовпці відповідно");
                 }
+            }
+        }
         long stop = System.currentTimeMillis();
         System.out.println("------------------");
-        System.out.println("Час виконання пошуку в мілісекундах - "+ (stop - start));
+        System.out.println("Час виконання пошуку в мілісекундах - " + (stop - start));
         System.out.println("------------------");
     }
 }
