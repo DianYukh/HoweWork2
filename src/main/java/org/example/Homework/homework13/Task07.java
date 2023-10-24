@@ -13,18 +13,35 @@ public class Task07 {
 
         int n = sc.nextInt();
         int[][] array = new int[n][n];
-        int k = 1;
-        for (int i = 0; i < array.length; i++) {
-            if (i % 2 == 0) {
-                for (int j = 0; j < array[i].length; j++) {
-                    array[i][j] = k++;
-                }
-            } else {
-                for (int j = array.length - 1; j >= 0; j--) {
-                    array[i][j] = k++;
-                }
+        int k = 0; // кількість
+        int beginI = 0; // початок рядків
+        int endI = n - 1; // кінець рядків
+        int beginJ = 0;  // початок стовпчиків
+        int endJ = n - 1; // кінець стовпчиків
+        int max = n * n;
+
+        while (k < max) {
+            for (int i = beginJ; i <= endJ; i++) {
+                array[beginI][i] = k++;
             }
+            beginI = beginI + 1;
+            for (int i = beginI; i <= endI; i++) {
+                array[i][endJ] = k;
+                k++;
+            }
+            endJ = endJ - 1;
+            for (int i = endJ; i >= beginJ; i--) {
+                array[endI][i] = k;
+                k++;
+            }
+            endI = endI - 1;
+            for (int i = endI; i >= beginI; i--) {
+                array[i][beginJ] = k;
+                k++;
+            }
+            beginJ = beginJ + 1;
         }
+
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {
                 System.out.print(array[i][j] + "  ");
