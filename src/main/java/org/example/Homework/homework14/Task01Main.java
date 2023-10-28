@@ -14,12 +14,11 @@ public class Task01Main {
 
         Diapazon diapazon = new Diapazon();
 
-        diapazon.EnterDiapazon();
+        Size[] ntimes = new Size[diapazon.n];
 
-//        for (int i = 0; i < diapazon.n; i++) {
-            diapazon.lenght = diapazon.b - diapazon.a + 1;
-            System.out.println("Довжина діапазону " + diapazon.lenght);
-//        }
+        diapazon.enterDiapazon();
+
     }
+
 }
 

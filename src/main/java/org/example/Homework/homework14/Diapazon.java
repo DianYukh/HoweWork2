@@ -8,19 +8,6 @@ public class Diapazon {
     int b;
     int lenght;
 
-    public void EnterDiapazon() {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Введіть кількість n діапазонів ");
-        n = sc.nextInt();
-
-        System.out.println("Введіть початкову точку a діапазону ");
-        a = sc.nextInt();
-
-        System.out.println("Введіть кінцеву точку b діапазону ");
-        b = sc.nextInt();
-    }
-
     public int getN() {
         return n;
     }
@@ -34,11 +21,7 @@ public class Diapazon {
     }
 
     public void setA(int a) {
-        if (a > b) {
-            this.a = a;
-        } else {
-            System.out.println("Помилкові дані. Спробуйте ще.");
-        }
+        this.a = a;
     }
 
     public int getB() {
@@ -47,8 +30,8 @@ public class Diapazon {
 
     public void setB(int b) {
         this.b = b;
-
     }
+
     public int getLenght() {
         return lenght;
     }
@@ -56,4 +39,34 @@ public class Diapazon {
     public void setLenght(int lenght) {
         this.lenght = lenght;
     }
+
+    public void enterDiapazon() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Введіть кількість n діапазонів ");
+        int n = sc.nextInt();
+
+        Size[] ntimes = new Size[n];
+
+        for (int i = 0; i < n; i++) {
+
+            System.out.println("Введіть початкову точку a діапазону ");
+            a = sc.nextInt();
+
+            System.out.println("Введіть кінцеву точку b діапазону ");
+            b = sc.nextInt();
+            ntimes[i] = new Size(a, b);
+
+            if (a > b) {
+                System.out.println("Помилкові дані. Спробуйте ще.");
+            } else {
+                lenght = b - a;
+                System.out.println("Довжина діапазону " + lenght);
+
+            }
+        }
+    }
+
+
 }
+
