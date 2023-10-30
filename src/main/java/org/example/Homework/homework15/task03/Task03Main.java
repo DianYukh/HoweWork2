@@ -23,8 +23,11 @@ public class Task03Main {
         money.show();
         money.division(2);
         money.show();
-        money.equals(5L,(byte)80);
-
+        money.equals(5L, (byte) 80);
+        //money.divisonNum(0.2);
+        //money.show();
+        //money.multiplication(0.5);
+        //money.show();
     }
 
 }
