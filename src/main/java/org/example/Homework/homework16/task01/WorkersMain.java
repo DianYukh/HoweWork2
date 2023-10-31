@@ -22,14 +22,19 @@ public class WorkersMain {
         Workers ratePerHour = new RatePerHour("Сидоренко", "погодинна", 120, 48);
         Workers unitary = new Unitary("Петренко", "відрядна", 2, 5500);
 
+        System.out.println("ПІБ         | Вид оплати |   Сума    |   ");
+        System.out.println("--------------------------------------");
         System.out.println(monthlyRate.getName() + "    | ставка     |   " + monthlyRate.salary()+" |");
         System.out.println("--------------------------------------");
         System.out.println(ratePerHour.getName() + "   | погодинна  |   " + ratePerHour.salary()+"  |");
         System.out.println("--------------------------------------");
         System.out.println(unitary.getName() + "    | відрядна   |   " + unitary.salary()+"  |");
         System.out.println("--------------------------------------");
+
         double total = monthlyRate.salary() + ratePerHour.salary() + unitary.salary();
+
         System.out.println("Разом                    |   " + total +" |");
+        System.out.println("--------------------------------------");
     }
 
 }
