@@ -5,11 +5,11 @@ public class Unitary extends Workers {
     double amount;
     double tax; // Cтавка
 
-    public Unitary(String name,  String tax, int numberTask, double amount) {
+    public Unitary(String name,  int tax, int numberTask, double amount) {
         super(name);
         this.numberTask = numberTask;
         this.amount = amount;
-        this.tax = 0.15;
+        this.tax = tax;
     }
 
 //    public void numberTask() {

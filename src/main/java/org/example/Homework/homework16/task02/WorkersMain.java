@@ -18,9 +18,9 @@ public class WorkersMain {
     //про заробітну плату у такому вигляді
     public static void main(String[] args) {
 
-        Workers monthlyRate = new MonthlyRate("Іваненко", "20 %", 500, 21);
-        Workers ratePerHour = new RatePerHour("Сидоренко", "20 %", 120, 48);
-        Workers unitary = new Unitary("Петренко", "15%", 2, 5500);
+        Workers monthlyRate = new MonthlyRate("Іваненко", 20 , 500, 21);
+        Workers ratePerHour = new RatePerHour("Сидоренко", 20, 120, 48);
+        Workers unitary = new Unitary("Петренко", 15, 2, 5500);
 
         System.out.println("ПІБ         | Податок |   Сума(грн)   |  До сплати    |  ");
         System.out.println("-------------------------------------------------------");

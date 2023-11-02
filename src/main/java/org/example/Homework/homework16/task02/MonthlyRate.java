@@ -4,13 +4,13 @@ public class MonthlyRate extends Workers {
     double dailyRate;
     double sal;
     int numberDays;
-    double tax; // Cтавка
+    int tax; // Cтавка
 
-    public MonthlyRate(String name, String tax, double dailyRate, int numberDays) {
+    public MonthlyRate(String name, int tax, double dailyRate, int numberDays) {
         super(name);
         this.dailyRate = dailyRate;
         this.numberDays = numberDays;
-        this.tax=0.20;
+        this.tax = tax;
 
     }
     public double salary() {

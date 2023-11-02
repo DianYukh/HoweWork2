@@ -4,13 +4,13 @@ public class RatePerHour extends Workers {
     double hourRate;
     int numberHours;
     String paymentMethod;
-    double tax; // Cтавка
+    int tax; // Cтавка
 
-    public RatePerHour(String name, String tax, double hourRate, int numberHours) {
+    public RatePerHour(String name, int tax, double hourRate, int numberHours) {
         super(name);
         this.hourRate = hourRate;
         this.numberHours = numberHours;
-        this.tax = 0.20;
+        this.tax = tax;
     }
 
     public double salary() {
