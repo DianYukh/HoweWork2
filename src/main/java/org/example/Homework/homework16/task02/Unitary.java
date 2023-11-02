@@ -29,6 +29,6 @@ public class Unitary extends Workers {
         return amount++;
     }
     public double salaryTax() {
-        return salary() * this.tax;
+        return (salary() * this.tax)/100;
     }
 }

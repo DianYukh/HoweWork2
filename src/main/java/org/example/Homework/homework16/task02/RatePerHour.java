@@ -17,6 +17,6 @@ public class RatePerHour extends Workers {
         return hourRate * numberHours;
     }
     public double salaryTax() {
-        return salary() * this.tax;
+        return (salary() * this.tax)/100;
     }
 }

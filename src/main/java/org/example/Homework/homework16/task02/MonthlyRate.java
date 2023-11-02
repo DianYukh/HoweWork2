@@ -18,6 +18,6 @@ public class MonthlyRate extends Workers {
     }
 
     public double salaryTax() {
-        return salary() * this.tax;
+        return (salary() * this.tax)/100;
     }
 }
