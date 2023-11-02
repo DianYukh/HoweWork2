@@ -3,12 +3,13 @@ package org.example.Homework.homework16.task02;
 public class Unitary extends Workers {
     int numberTask;
     double amount;
-    String tax; // Cтавка
+    double tax; // Cтавка
 
     public Unitary(String name,  String tax, int numberTask, double amount) {
         super(name);
         this.numberTask = numberTask;
         this.amount = amount;
+        this.tax = 0.15;
     }
 
 //    public void numberTask() {
@@ -28,6 +29,6 @@ public class Unitary extends Workers {
         return amount++;
     }
     public double salaryTax() {
-        return salary() * 0.15;
+        return salary() * this.tax;
     }
 }
