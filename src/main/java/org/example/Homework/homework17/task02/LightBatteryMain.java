@@ -12,5 +12,6 @@ public class LightBatteryMain {
     public static void main(String[] args) {
 Flashlight flashlight = new Flashlight();
 flashlight.on();
+
     }
 }

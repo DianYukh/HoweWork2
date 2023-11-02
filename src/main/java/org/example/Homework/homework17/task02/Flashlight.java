@@ -2,11 +2,11 @@ package org.example.Homework.homework17.task02;
 
 public class Flashlight {
     private boolean light;
-    private ChinaBattery battery = new ChinaBattery();
+    private final ChinaBattery battery = new ChinaBattery();
 
     public void on() {
         if (battery.changeCharge()) {
-            System.out.println("Ліхтарик увімкнений. Батарейка заряджена на - " + battery.changeCharge() + " %");
+            System.out.println("Ліхтарик увімкнений. Батарейка заряджена на - " + battery.getCharge() + " %");
         } else {
             System.out.println("Ліхтарик розряджено");
         }

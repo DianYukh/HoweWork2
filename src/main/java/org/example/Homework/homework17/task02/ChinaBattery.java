@@ -3,7 +3,7 @@ package org.example.Homework.homework17.task02;
 public class ChinaBattery {
     private int charge;
     public ChinaBattery(){
-        charge = 100; // значення для батереї
+        this.charge = 100; // значення для батереї
     }
     public boolean changeCharge() {
         if (charge > 0) {
@@ -13,4 +13,8 @@ public class ChinaBattery {
             return false;
         }
     }
+    public int getCharge() {
+        return charge;
+    }
+
 }
