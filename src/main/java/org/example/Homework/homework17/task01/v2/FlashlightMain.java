@@ -1,4 +1,4 @@
-package org.example.Homework.homework17.task01;
+package org.example.Homework.homework17.task01.v2;
 
 public class FlashlightMain {
     //Створіть клас ліхтарика (Flashlight).
@@ -9,9 +9,9 @@ public class FlashlightMain {
     //  реалізувати алгоритм ввімкнення і вимкнення ліхтарика.
 
     public static void main(String[] args) {
-        Flashlight flashlight = new Flashlight();
-        flashlight.on();
-        //flashlight.off();
+        FlashlightClass flashlight = new FlashlightClass();
+       // flashlight.on();
+        flashlight.off();
         System.out.println("Стан ліхтарика - " + flashlight.isLight());
 
     }

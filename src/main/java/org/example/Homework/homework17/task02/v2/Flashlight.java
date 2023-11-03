@@ -1,8 +1,13 @@
-package org.example.Homework.homework17.task02;
+package org.example.Homework.homework17.task02.v2;
 
 public class Flashlight {
     private boolean light;
-    private final ChinaBattery battery = new ChinaBattery();
+    private final ChinaBattery battery = new ChinaBattery() {
+        @Override
+        public boolean charge() {
+            return false;
+        }
+    };
 
     public void on() {
         if (battery.changeCharge()) {

@@ -1,4 +1,4 @@
-package org.example.Homework.homework17.task01;
+package org.example.Homework.homework17.task01.v1;
 
 public class Flashlight {
     private boolean light;

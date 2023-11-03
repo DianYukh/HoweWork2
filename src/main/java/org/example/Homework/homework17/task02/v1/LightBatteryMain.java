@@ -1,4 +1,4 @@
-package org.example.Homework.homework17.task02;
+package org.example.Homework.homework17.task02.v1;
 
 public class LightBatteryMain {
     //Створіть клас для китайської батарейки ChinaBattery.
