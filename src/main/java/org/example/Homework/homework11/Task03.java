@@ -14,6 +14,7 @@ public class Task03 {
     public static void line(String direct, int length, char symbol) {
         boolean contains1 = direct.contains("vertikal");
         boolean contains2 = direct.contains("horisontal");
+
         if (contains1) {
             for (int k = 0; k < length; k++) {
                 System.out.println(symbol);
