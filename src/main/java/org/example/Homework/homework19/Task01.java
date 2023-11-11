@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Task01 {
 
-    public static class MyArray<T extends Number> {
+    public static class MyArray<T extends Number & Comparable<T>> {
         T[] arr;
 
 
@@ -74,6 +74,29 @@ public class Task01 {
                 }
             }return min;
         }
+
+
+        public T maxValueCompare() {
+            T max = arr[0];
+            for (T elements : arr) {
+                if (elements.compareTo(max) > 0) {
+                    max = elements;
+                }
+            }
+            System.out.println(max);
+            return max;
+        }
+        public T minValueCompare() {
+            T min = arr[0];
+            for (T elements : arr) {
+                if (elements.compareTo(min)< 0) {
+                    min = elements;
+                }
+            }return min;
+        }
+
+
+
         public double average(){
             double sum = 0;
             for (T elements : arr) {
