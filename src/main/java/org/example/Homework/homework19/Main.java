@@ -1,9 +1,9 @@
 package org.example.Homework.homework19;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 import static java.lang.reflect.Array.newInstance;
+import static org.example.Homework.homework19.Task01.MyArray.minValueCompare;
 
 
 public class Main {
@@ -28,13 +28,13 @@ public class Main {
 
 //     fillRandomArr2(myArray);
 
-        //для Integer
+        //Random для Integer
 //        Task01.MyArray<Integer> myArray1 = new Task01.MyArray<>();
 //        myArray1.fillRandomArr(Integer.class, 3);
 //        System.out.println("Random Integer.class");
 //        System.out.println(Arrays.toString(myArray1.arr));
 
-        //для Double
+        //Random для Double
 //        myArray1.fillRandomArr(Double.class, 3);
 //        System.out.println("Random Double.class");
 //        System.out.println(Arrays.toString(myArray1.arr));
@@ -43,5 +43,6 @@ public class Main {
         System.out.println("Max = " + myArray.maxValue());
         System.out.println("Min = " + myArray.minValue());
         System.out.println("Середнє арифметичне = " + myArray.average());
+
     }
 }
