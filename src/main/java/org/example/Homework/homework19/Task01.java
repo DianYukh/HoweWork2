@@ -9,6 +9,7 @@ public class Task01 {
     public static class MyArray<T extends Number> {
         T[] arr;
 
+
         public void fillKeyBoardArr(Class<T> clazz) {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Введіть розмір масиву");
@@ -48,14 +49,40 @@ public class Task01 {
             }
         }
 
-        static void displayArray(Object array) {
-            if (array.getClass().isArray()) {
-                int length = Array.getLength(array);
-                for (int i = 0; i < length; i++) {
-                    Object arrayElement = Array.get(array, i);
-                    System.out.println(arrayElement);
+        public void displayArray() {
+            for (T elements : arr) {
+                System.out.print(elements + " ");
+
+            }
+        }
+
+        public T maxValue() {
+            T max = arr[0];
+            for (T elements : arr) {
+                if (elements.doubleValue()> max.doubleValue()) {
+                    max = elements;
                 }
             }
+            System.out.println(max);
+            return max;
+        }
+        public T minValue() {
+            T min = arr[0];
+            for (T elements : arr) {
+                if (elements.doubleValue()< min.doubleValue()) {
+                    min = elements;
+                }
+            }return min;
+        }
+        public double average(){
+            double sum = 0;
+            for (T elements : arr) {
+                sum = sum+ elements.doubleValue();
+            }
+            double averege = Math.round(sum / arr.length);
+            return averege;
         }
     }
 }
+
+
