@@ -1,4 +1,4 @@
-package org.example.Homework.homework21;
+package org.example.Homework.homework2122;
 
 public interface ICoffeeMachine {
     void turnOn();
