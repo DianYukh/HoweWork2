@@ -2,9 +2,9 @@ package org.example.Homework.homework2122;
 
 public class SiemensCoffeeMachine extends CoffeeMachine {
 
-public static int maxCoffeeLevel = 600;
-public static int maxWaterLevel = 400;
+
     public SiemensCoffeeMachine() {
+        super(2000, 500, 2000);
     }
 
     public SiemensCoffeeMachine(int currentWaterLevel, int currentCoffeeLevel, int currentGarbageLevel) {

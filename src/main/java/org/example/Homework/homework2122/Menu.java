@@ -80,16 +80,17 @@ public class Menu {
                                     repeatMenu = false;
                                     repeatOperation = false;
                                 }
+                                default ->  System.out.println("Помилка введення операції. Повторіть спробу. Оберіть цифри зі списку.");
 
                             }
                         } catch (InputMismatchException e) {
-                            System.out.println("Помилка введення операції. Повторіть спробу.");
+                            System.out.println("Помилка введення операції. Повторіть спробу. Оберіть цифри зі списку.");
                             scanner.nextLine();
                         }
                     }
                 }
             } catch (InputMismatchException e) {
-                System.out.println("Помилка введення. Повторіть спробу.");
+                System.out.println("Помилка введення. Повторіть спробу. Оберіть цифри зі списку.");
                 scanner.nextLine();
             }
         }
