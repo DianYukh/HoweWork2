@@ -80,7 +80,7 @@ public class MethodsDB {
         Set<Human> humans = dataBaseFine.getHumans();
         for (Human human : humans) {
             if (human.getName().equals(name) && human.getFine().getFineMap().get(typeFine) != null && human.getFine().getFineMap().get(typeFine) > 0) {
-                human.setFine(null);
+                human.getFine().getFineMap().remove(typeFine);
                 System.out.println(human);
             }
             }
