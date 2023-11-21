@@ -56,36 +56,32 @@ public class MethodsDB {
 
     public void addHuman(String name, int inn, String city) {
         Set<Human> humans = dataBaseFine.getHumans();
-        for (Human human : humans) {
-            if (human.getName().equals(name) && human.getInn() == inn && human.getCity().equals(city)) {
-                human.setName(name);
-                human.setInn(inn);
-                human.setCity(city);
+        humans.add(new Human(name, inn, city, new Fine()));
+        System.out.println(humans);
+    }
 
+    public void addFine(String name, Fine fine) {
+        Set<Human> humans = dataBaseFine.getHumans();
+        for (Human human : humans) {
+            if (human.getName().equals(name)) {
+                human.setFine(fine);
                 System.out.println(human);
             }
         }
     }
-    public void addFine(String name, Fine fine) {
+
+    public void removeFine(String name, String typeFine) {
+        if (typeFine != null && !typeFine.isBlank()) {
             Set<Human> humans = dataBaseFine.getHumans();
             for (Human human : humans) {
-                if (human.getName().equals(name)) {
-                    human.setFine(fine);
+                if (human.getName().equals(name) && human.getFine().getFineMap().get(typeFine) != null && human.getFine().getFineMap().get(typeFine) > 0) {
+                    human.getFine().getFineMap().remove(typeFine);
                     System.out.println(human);
                 }
             }
-    }
-    public void removeFine(String name, String typeFine) {
-        if (typeFine != null && !typeFine.isBlank()) {
-        Set<Human> humans = dataBaseFine.getHumans();
-        for (Human human : humans) {
-            if (human.getName().equals(name) && human.getFine().getFineMap().get(typeFine) != null && human.getFine().getFineMap().get(typeFine) > 0) {
-                human.getFine().getFineMap().remove(typeFine);
-                System.out.println(human);
-            }
-            }
         }
     }
+
     public void replaceInfo(String name, int inn, String city, Fine fine) {
         Set<Human> humans = dataBaseFine.getHumans();
         for (Human human : humans) {
