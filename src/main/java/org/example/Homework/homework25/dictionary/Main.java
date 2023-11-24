@@ -1,7 +1,6 @@
-package org.example.Homework.homework25;
+package org.example.Homework.homework25.dictionary;
 
-import java.util.HashMap;
-import java.util.Map;
+import org.example.Homework.homework25.dictionary.view.Menu;
 
 public class Main {
 //Створіть програму для роботи зі словником. Наприклад, англоіспанський,
@@ -16,20 +15,10 @@ public class Main {
 //непопулярність спираючись на лічильник звернень).
 
     public static void main(String[] args) {
-        Map<String,String> dictionary = new HashMap<String,String>();
-        dictionary.put("January", "січень");
-        dictionary.put("February", "лютий");
-        dictionary.put("March", "березень");
-        dictionary.put("April", "квітень");
-        dictionary.put("May", "травень");
-        dictionary.put("June", "червень");
-        dictionary.put("July", "липень");
-        dictionary.put("August", "серпень");
-        dictionary.put("September", "вересень");
-        dictionary.put("October", "жовтень");
-        dictionary.put("November", "листопад");
-        dictionary.put("December", "грудень");
 
+        Menu menu = new Menu();
+        menu.menu();;
+        
     }
 
 
