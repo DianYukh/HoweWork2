@@ -35,6 +35,7 @@ public class Menu {
     public void menu() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Виберіть операцію");
+        Metods metods = new Metods();
         while (true) {
             System.out.println("1 Надати початкове введення даних для словника.");
             System.out.println("2 Відобразити слово та його переклади.");
@@ -46,19 +47,20 @@ public class Menu {
             System.out.println("8 Видалити слово.");
             System.out.println("9 Відобразити топ-10 найпопулярніших слів.");
             System.out.println("10 Відобразити топ-10 найнепопулярніших слів.");
+            System.out.println("11 Відобразити весь словник.");
             System.out.println("0 Вихід.");
 
 
-            Metods metods = new Metods();
+
 
 
             int choice = scanner.nextInt();
+            scanner.nextLine();
             boolean isSelect = true;
             switch (choice) {
                 case 1 ->{
-                    System.out.println("Введіть слово на українській мові");
+                    System.out.println("Введіть слово на англійській мові");
                     String word = scanner.nextLine();
-                    scanner.nextLine();
                     System.out.println("Введіть переклад цього слова");
                     String translation = scanner.nextLine();
                     metods.addWord(word, translation);
@@ -66,17 +68,57 @@ public class Menu {
                 case 2 ->{
                     System.out.println("Введіть слово для перекладу");
                     String word = scanner.nextLine();
-                    scanner.nextLine();
                     metods.showWord(word);
                 }
-                case 3 ->{ }
-                case 4 ->{ }
-                case 5 ->{ }
-                case 6 ->{ }
-                case 7 ->{ }
-                case 8 ->{ }
-                case 9 ->{ }
-                case 10 ->{ }
+                case 3 ->{
+                    System.out.println("Введіть слово на англійській мові, переклад якого треба додати");
+                    String word = scanner.nextLine();
+                    System.out.println("Введіть переклад цього слова");
+                    String addTranslation = scanner.nextLine();
+                    metods.addTranslation(word, addTranslation);
+                }
+                case 4 ->{
+                    System.out.println("Введіть слово на англійській мові, переклад якого треба змінити");
+                    String word = scanner.nextLine();
+                    System.out.println("Введіть старий переклад цього слова");
+                    String oldTranslation = scanner.nextLine();
+                    System.out.println("Введіть новий переклад цього слова");
+                    String newTranslation = scanner.nextLine();
+                    metods.changeTranslation(word, oldTranslation, newTranslation);
+                }
+                case 5 ->{
+                    System.out.println("Введіть слово на англійській мові, переклад якого треба видалити");
+                    String word = scanner.nextLine();
+                    System.out.println("Введіть переклад цього слова");
+                    String deleteTranslation = scanner.nextLine();
+                    metods.deleteTranslation(word, deleteTranslation);
+                }
+                case 6 ->{
+                    System.out.println("Введіть слово на англыйськый мовы яке потрібно додати");
+                    String word = scanner.nextLine();
+                    metods.addNewWord(word);
+                }
+                case 7 ->{
+                    System.out.println("Введіть слово на англійській мові, яке потрібно змінити");
+                    String word = scanner.nextLine();
+                    System.out.println("Введіть нове слово");
+                    String newWord = scanner.nextLine();
+                    metods.changeWord(word, newWord);
+                }
+                case 8 ->{
+                    System.out.println("Введіть слово яке потрібно видалити");
+                    String word = scanner.nextLine();
+                    metods.deleteWord(word);
+                }
+                case 9 ->{
+                    System.out.println("Топ-10 найпопулярніших слів:");
+                }
+                case 10 ->{
+                    System.out.println("Топ-10 найнепопулярніших слів:");
+                }
+                case 11 ->{
+                    System.out.println("Весь словник");
+                    metods.showDictionary();}
                 case 0 -> {
                     System.out.println("До побачення");
                     isSelect = false;;

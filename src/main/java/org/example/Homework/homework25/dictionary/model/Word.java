@@ -11,12 +11,12 @@ public class Word {
     private int count;
 
     public Word() {
+        this.count = 0;
     }
 
     public Word(String word, Set<String> translation) {
         this.word = word;
         this.translation = translation;
-        this.count = 0;
     }
 
     public String getWord() {

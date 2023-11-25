@@ -3,14 +3,16 @@ package org.example.Homework.homework25.dictionary.model;
 
 import org.example.Homework.homework25.dictionary.db.DefaultDictionary;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
 public class Dictionary {
 
-    private Map<String, Set<String>> dictionary = new DefaultDictionary().defaultVocabulary();
+    private Map<String, Set<String>> dictionary;
 
     public Dictionary() {
+        this.dictionary = new DefaultDictionary().defaultVocabulary();
     }
 
     public Dictionary(Map<String, Set<String>> dictionary) {
