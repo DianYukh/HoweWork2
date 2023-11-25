@@ -1,9 +1,5 @@
-package org.example.Homework.homework25.olddictionary;
+package org.example.Homework.homework2526.olddictionary;
 
-import org.example.Homework.homework23.User;
-
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Menu {

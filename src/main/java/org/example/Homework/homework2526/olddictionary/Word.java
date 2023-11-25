@@ -1,22 +1,22 @@
-package org.example.Homework.homework25.dictionary.model;
+package org.example.Homework.homework2526.olddictionary;
 
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Word {
 
     private String word;
-    private Set<String> translation = new HashSet<>();
+    private Map<String, String> translation = new HashMap<>();
     private int count;
 
     public Word() {
-        this.count = 0;
     }
 
-    public Word(String word, Set<String> translation) {
+    public Word(String word, Map<String, String> translation) {
         this.word = word;
         this.translation = translation;
+        this.count = 0;
     }
 
     public String getWord() {
@@ -27,11 +27,11 @@ public class Word {
         this.word = word;
     }
 
-    public Set<String> getTranslation() {
+    public Map<String, String> getTranslation() {
         return translation;
     }
 
-    public void setTranslation(Set<String> translation) {
+    public void setTranslation(Map<String, String> translation) {
         this.translation = translation;
     }
 
@@ -42,4 +42,5 @@ public class Word {
     public void setCount(int count) {
         this.count = count;
     }
+
 }

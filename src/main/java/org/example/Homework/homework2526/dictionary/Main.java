@@ -1,7 +1,6 @@
-package org.example.Homework.homework25.olddictionary;
+package org.example.Homework.homework2526.dictionary;
 
-import java.util.HashMap;
-import java.util.Map;
+import org.example.Homework.homework2526.dictionary.view.Menu;
 
 public class Main {
 //Створіть програму для роботи зі словником. Наприклад, англоіспанський,
@@ -17,6 +16,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Menu menu = new Menu();
+        menu.menu();;
 
     }
 

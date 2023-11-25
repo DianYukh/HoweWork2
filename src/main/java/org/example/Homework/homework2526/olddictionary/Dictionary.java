@@ -1,18 +1,12 @@
-package org.example.Homework.homework25.dictionary.model;
+package org.example.Homework.homework2526.olddictionary;
 
-
-import org.example.Homework.homework25.dictionary.db.DefaultDictionary;
-
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Dictionary {
-
-    private Map<String, Set<String>> dictionary;
+    private Word word;
+    private Map<String, Set<String>> dictionary = new HashMap<>();
 
     public Dictionary() {
-        this.dictionary = new DefaultDictionary().defaultVocabulary();
     }
 
     public Dictionary(Map<String, Set<String>> dictionary) {
@@ -29,7 +23,9 @@ public class Dictionary {
 
     @Override
     public String toString() {
-        return "Dictionary{" + "dictionary=" + dictionary + '}';
+        return "Dictionary{" +
+                "dictionary=" + dictionary +
+                '}';
     }
 
 }

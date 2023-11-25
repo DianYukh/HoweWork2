@@ -1,10 +1,9 @@
-package org.example.Homework.homework25.dictionary.view;
+package org.example.Homework.homework2526.dictionary.view;
 
 
 
 
-import org.example.Homework.homework25.dictionary.model.Dictionary;
-import org.example.Homework.homework25.dictionary.service.Metods;
+import org.example.Homework.homework2526.dictionary.service.Metods;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package org.example.Homework.homework25.olddictionary;
+package org.example.Homework.homework2526.olddictionary;
 
 import java.util.HashMap;
 import java.util.Map;

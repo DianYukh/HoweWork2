@@ -1,7 +1,7 @@
-package org.example.Homework.homework25.dictionary.service;
+package org.example.Homework.homework2526.dictionary.service;
 
-import org.example.Homework.homework25.dictionary.db.DefaultDictionary;
-import org.example.Homework.homework25.dictionary.model.Dictionary;
+import org.example.Homework.homework2526.dictionary.db.DefaultDictionary;
+import org.example.Homework.homework2526.dictionary.model.Dictionary;
 
 
 import java.util.*;

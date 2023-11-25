@@ -1,4 +1,4 @@
-package org.example.Homework.homework25.dictionary.db;
+package org.example.Homework.homework2526.dictionary.db;
 
 import java.util.*;
 

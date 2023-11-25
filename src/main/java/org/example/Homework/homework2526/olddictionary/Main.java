@@ -1,6 +1,4 @@
-package org.example.Homework.homework25.dictionary;
-
-import org.example.Homework.homework25.dictionary.view.Menu;
+package org.example.Homework.homework2526.olddictionary;
 
 public class Main {
 //Створіть програму для роботи зі словником. Наприклад, англоіспанський,
@@ -16,9 +14,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Menu menu = new Menu();
-        menu.menu();;
-        
+
     }
 
 
