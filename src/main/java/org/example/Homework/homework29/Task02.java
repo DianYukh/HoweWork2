@@ -60,5 +60,11 @@ public class Task02 {
 
         arrSum.start();
         arrAvarege.start();
+
+        try {
+            arrSum.join();
+            arrAvarege.join();
+        } catch (InterruptedException ex) {
+        }
     }
 }
